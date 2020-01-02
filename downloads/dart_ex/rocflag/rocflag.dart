@@ -12,6 +12,49 @@ void main() {
   canvas = querySelector('#canvas');
   ctx = canvas.getContext('2d');
 
+  drawROC(ctx);
+  querySelector("#roc").onClick.listen((e) => drawROC(ctx));
+  querySelector("#usa").onClick.listen((e) => drawUSA(ctx));
+  querySelector("#button").onClick.listen((e) => clearCanvas());
+}
+
+void drawUSA(ctx){
+  // 紅色
+  ctx.clearRect(0, 0, flag_w, flag_h);
+  ctx.fillStyle = 'rgb(200,0,0)';
+  ctx.fillRect(0, 0, flag_w, flag_h);
+  //藍色
+  ctx.fillStyle='rgb(0,0,100)';
+  ctx.fillRect(0, 0, flag_w/2, flag_h/1.857);
+  //白色
+  ctx.fillStyle='rgb(255,255,255)';
+  ctx.fillRect(flag_w/2,flag_h/13,flag_w,flag_h/13);
+    ctx.fillStyle='rgb(255,255,255)';
+  ctx.fillRect(flag_w/2,flag_h/4.3,flag_w,flag_h/13);
+     ctx.fillStyle='rgb(255,255,255)';
+  ctx.fillRect(flag_w/2,flag_h/2.6,flag_w,flag_h/13);
+     ctx.fillStyle='rgb(255,255,255)';
+  ctx.fillRect(0,flag_h/1.857,flag_w,flag_h/13);
+     ctx.fillStyle='rgb(255,255,255)';
+  ctx.fillRect(0,flag_h/1.4444,flag_w,flag_h/13);
+       ctx.fillStyle='rgb(255,255,255)';
+  ctx.fillRect(0,flag_h/1.1818,flag_w,flag_h/13);
+  //星星
+  num b = flag_h/18;
+  ctx.font = "10px Arial";
+  ctx.strokeStyle = 'rgb(255, 255, 255)';
+  ctx.strokeText("✮      ✮      ✮      ✮      ✮      ✮", flag_w / 36,12);
+  ctx.strokeText("✮      ✮      ✮      ✮      ✮", flag_w / 14, b*2);
+  ctx.strokeText("✮      ✮      ✮      ✮      ✮      ✮", flag_w / 36, b*3);
+  ctx.strokeText("✮      ✮      ✮      ✮      ✮", flag_w / 14, b*4);
+  ctx.strokeText("✮      ✮      ✮      ✮      ✮      ✮", flag_w / 36, b*5);
+  ctx.strokeText("✮      ✮      ✮      ✮      ✮", flag_w / 14, b*6);
+  ctx.strokeText("✮      ✮      ✮      ✮      ✮      ✮", flag_w / 36, b*7);
+   ctx.strokeText("✮      ✮      ✮      ✮      ✮", flag_w / 14, b*8);
+   ctx.strokeText("✮      ✮      ✮      ✮      ✮      ✮", flag_w / 36, b*9);
+}
+
+void drawROC(ctx){
   // 先畫滿地紅
   ctx.clearRect(0, 0, flag_w, flag_h);
   ctx.fillStyle = 'rgb(255, 0, 0)';
@@ -51,4 +94,8 @@ void main() {
   // 填色設為白色
   ctx.fillStyle = '#fff';
   ctx.fill();
+}
+
+void clearCanvas(){
+  ctx.clearRect(0, 0, flag_w, flag_h);
 }
