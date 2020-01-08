@@ -34,8 +34,8 @@
 <v t="leo.20200108212204.1"><vh>國旗</vh>
 <v t="leo.20200108212307.1"><vh>國旗</vh></v>
 </v>
-<v t="leo.20180902120523.18"><vh>導入影片</vh>
-<v t="leo.20180902120523.19"><vh>iframe 導入影片</vh></v>
+<v t="leo.20180902120523.18"><vh>心得</vh>
+<v t="leo.20180902120523.19"><vh>心得</vh></v>
 </v>
 </v>
 </v>
@@ -96,19 +96,18 @@ Created by [40823236](https://40823236.github.io/cp2019)&lt;/small&gt;
 &lt;iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823236&amp;amp;gh_repo=cp2019&amp;amp;gh_path=downloads/dart_ex/temp1&amp;amp;theme=dark" width="800"&gt;&lt;/iframe&gt;</t>
 <t tx="leo.20180902120523.18">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
 @others
     &lt;/script&gt;
 &lt;/section&gt;
 
 
+
 						
 </t>
-<t tx="leo.20180902120523.19">## 使用 iframe 導入影片
+<t tx="leo.20180902120523.19">##心得
 
-### 導入影片 template
-
-&lt;iframe src="https://player.vimeo.com/video/183950627" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-</t>
+在這學期我學到如何建一個自己的網站，並知道如何從遠端下載資料、把靜態的東西上傳到動態上，雖然我還沒有很熟練但慢慢練、多問別人讓自己更了解更上手。</t>
 <t tx="leo.20180902120523.2"></t>
 <t tx="leo.20180902120523.3">@language xml
 @tabwidth -4
